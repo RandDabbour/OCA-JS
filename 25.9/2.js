@@ -31,10 +31,31 @@ const sortedString = AlphabeticalString(string);
 console.log("Sorted string:", sortedString);
 
 //. Return how many words was given 
-function countWord(word)
-{
-    if (word.trim() ==="")
-    {
-        return 0;
-    }
-}
+
+
+function countWords(wordCount) {
+    return wordCount.trim().split(/\s+/).length;
+  }
+  
+  const sentence = "Hey im Ran!";
+  const wordCount = countWords(sentence);
+  console.log(wordCount);
+
+
+
+// 4.Create function to Multiply all elements in an array by it's length 
+
+function ArrayLengthmultiply(arr) {
+    return arr.map(element => element * arr.length);
+  }
+  
+  const array = [4, 7, -3, 1];
+  const result = ArrayLengthmultiply(array);
+  console.log(result);
+
+//   5. Create a function that will repeat each string character two times 
+
+function doubleChar(repeatedString) {
+    return repeatedString.split('').map(char => char + char).join('');
+  }
+    console.log(doubleChar('heyy there')); 

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../Desktop/java script/java script/task3"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "OCA-JS",
+		"liveServer.settings.port": 5502
+	}
+}

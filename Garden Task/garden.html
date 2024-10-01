@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Container section styles */
+.containerSec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Form styling */
+.formDiv {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+fieldset {
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+}
+
+button[type="button"] {
+    background-color: #f44336;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button[type="button"]:hover {
+    background-color: #d32f2f;
+}
+
+/* Table styling */
+.tableDiv {
+    width: 100%;
+    max-width: 800px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Edit and delete button styling */
+button.editBtn {
+    background-color: #ffa500;
+}
+
+button.deleteBtn {
+    background-color: #f44336;
+}
+
+button.editBtn:hover {
+    background-color: #e59400;
+}
+
+button.deleteBtn:hover {
+    background-color: #d32f2f;
+}
+</style>
+
+</head>
+<body>
+    <section class="containerSec">
+        <div class="formDiv">
+            <form action="" id="formGarden">
+                <fieldset>
+                    <legend>Garden Information</legend>
+                    <label for="nameInp" id="nameIn">Name</label>
+                    <br><input type="text" name="nameInp" id="nameInp">
+                    <br><br>
+
+                    <label for="selImg" id="imageIn">Image</label>
+                    <br>
+                    <select name="selImg" id="selImg">
+                        <option value="alstroemerias">alstroemerias</option>   
+                        <option value="gardenias">gardenias</option>
+                        <option value="orchids">orchids</option>
+                        <option value="peonies">peonies</option>
+                        <option value="roses">roses</option>
+                        <option value="sunflowers">sunflowers</option>
+                        <option value="tulips">tulips</option>        
+                    </select>
+                    <br><br>
+
+                    <label for="sesonInp" id="sesoneIn">Season</label>
+                    <br><input type="text" name="sesonInp" id="sesonInp">
+                    <br><br>
+                    <button type="submit">Send</button>
+                    <button type="button" id="clerLis">Clear List</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="tableDiv" id="tableGarden">
+            <table id="tabCon">
+                <thead id="headCon"></thead>
+                <tbody id="bodCon"></tbody>
+                <tfoot id="tfoCon"></tfoot>
+            </table>
+        </div>
+
+        <section class="productsContainer" id="productsContainer">
+            <!-- Products will be rendered here -->
+        </section>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
