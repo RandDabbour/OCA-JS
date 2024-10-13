@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Data</title>
+    <link rel="stylesheet" href="pokemon.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  
+}
+
+section {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#pokemonContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.pokemon {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.pokemon img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.pokemon p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.pokemon ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pokemon ul li {
+    font-size: 1em;
+    color: #555;
+}
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Pokémon Information</h1>
+        <div id="pokemonContainer"></div>
+    </section>
+    <script src="pokemon.js"></script>
+</body>
+</html>

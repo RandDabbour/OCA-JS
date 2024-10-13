@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Data Display</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    #apiDataContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates responsive columns */
+  gap: 20px; 
+  padding: 20px;
+}
+.vehicleType {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vehicleType p {
+  margin: 5px 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+  </style>
+</head>
+<body>
+
+  <section>
+    <h1>Vehicle Types for Make: Mercedes</h1>
+    <div id="apiDataContainer"></div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
